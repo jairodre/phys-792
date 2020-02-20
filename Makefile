@@ -1,23 +1,23 @@
-.PHONY: all clean info install
+.PHONY: all info clean install
 
 CXXFLAGS = -Wall -O2
-CXXFLAGS += $(shell root-config --cflags)
+CXXFLAGS+= $(shell root-config --cflags)
 
 LIBS = $(shell root-config --libs)
 
 SRC = $(wildcard *.cc)
-EXE = $(SCR:.cc=.exe)
+EXE = $(SRC:.cc=)
 
 all: $(EXE)
 
-%.exe: %.cc 
+%: %.cc 
 	$(CXX) $(CXXFLAGS) $(LIBS) $< -o $@
 
 info:
-	@echo $(SRC)
-	@echo $(EXE)
-	@echo $(LIBS)
-	@echo $(CXXFLAGS)
+	@echo -n $(SRC) 
+	@echo -n $(EXE) 
+	@echo -n $(LIBS) 
+	@echo -n $(CXXFLAGS) 
 
 clean:
 	$(RM) *.exe
