@@ -1,0 +1,63 @@
+:volu hall BOX 10*m 10*m 20*m G4_AIR
+:volu tubs TUBS 50*cm 70*cm 50*cm 0 270 G4_BRASS
+:volu tube TUBE 50*cm 70*cm 50*cm G4_FERRIC_OXIDE
+:volu cone CONE 5*cm 15*cm 60*cm 70*cm 50*cm G4_FERRIC_OXIDE
+:volu cons CONS 5*cm 15*cm 60*cm 70*cm 50*cm 0 180 G4_FERRIC_OXIDE
+:volu trd TRD 5*cm 15*cm 60*cm 70*cm 50*cm G4_FERRIC_OXIDE
+:volu para PARA 5*cm 15*cm 25*cm 40 20 60 G4_FERRIC_OXIDE
+:volu trap TRAP 50*cm 2 10 40*cm G4_FERRIC_OXIDE
+:volu sphr SPHERE 20*cm 70*cm 40 360 40 360 G4_FERRIC_OXIDE
+:volu orb ORB 30*cm G4_FERRIC_OXIDE
+:volu tor TORUS 0*cm 20*cm 50*cm 0 360 G4_FERRIC_OXIDE
+:volu etube ELLIPTICALTUBE 15*cm 15*cm 20*cm G4_PLUTONIUM_DIOXIDE
+:volu ellip ELLIPSOID 15*cm 15*cm 20*cm 0 0 G4_STAINLESS-STEEL
+:volu ellic ELLIPTICALCONE 1*cm 1*cm 2*cm 10 G4_STAINLESS-STEEL
+:volu hype HYPE 15*cm 27*cm 0 20 25*cm G4_STAINLESS-STEEL
+:volu twbox TWISTEDBOX 0.7 25*cm 25*cm 25*cm G4_MYLAR
+:volu twtrap TWISTEDTRAP 0.7 10*cm 0 0 10*cm 10*cm 10*cm 10*cm 10*cm 10*cm 0 G4_MYLAR
+:volu twtrd TWISTEDTRD 25*cm 25*cm 12*cm 25*cm 37*cm 0.7 G4_MYLAR
+:volu twtubs TWISTEDTUBS 0.7 25*cm 40*cm 25*cm 0.7 G4_MYLAR
+
+
+:color tubs 0.2 0.4 0.8
+:color tube 0.2 0.4 0.8
+:color cone 0.2 0.4 0.8
+:color cons 0.2 0.4 0.8
+:color trd 0.2 0.4 0.8
+:color para 0.2 0.4 0.8
+:color trap 0.2 0.4 0.8
+:color sphr 0.2 0.4 0.8
+:color orb 0.2 0.4 0.8
+:color tor 0.2 0.4 0.8
+:color etube 0.2 0.4 0.8
+:color ellip 0.2 0.4 0.8
+:color ellic 0.2 0.4 0.8
+:color hype 0.2 0.4 0.8
+:color twbox 0.2 0.4 0.8
+:color twtrap 0.2 0.4 0.8
+:color twtrd 0.2 0.4 0.8
+:color twtubs 0.2 0.4 0.8
+
+:rotm r000 0 0 0
+:place tubs 1 hall r000 0 0 0
+:place tube 1 hall r000 0 0 2*m
+:place cone 1 hall r000 0 0 4*m
+:place cons 1 hall r000 0 0 6*m
+:place trd 1 hall r000 0 0 8*m
+:place para 1 hall r000 0 0 10*m
+:place trap 1 hall r000 0 0 12*m
+:place sphr 1 hall r000 0 2*m 0*m
+:place orb 1 hall r000 0 2*m 2*m
+:place tor 1 hall r000 0 2*m 4*m
+:place etube 1 hall r000 0 2*m 6*m
+:place ellip 1 hall r000 0 2*m 8*m
+:place ellic 1 hall r000 0 2*m 10*m
+:place hype 1 hall r000 0 2*m 12*m
+:place twbox 1 hall r000 0 4*m 0*m
+:place twtrap 1 hall r000 0 4*m 2*m
+:place twtrd 1 hall r000 0 4*m 4*m
+:place twtubs 1 hall r000 0 4*m 6*m
+
+
+
+:vis hall OFF
